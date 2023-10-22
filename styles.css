@@ -177,14 +177,9 @@ button:hover {
         margin-top: 15vh;
     }
     #profile_pic {
-      scale: .8;
-      margin-top: -10vh;
-      transition: ease all 1s;
-        
+      height: 50vh;
     }
-    #profile_pic:hover {
-        scale: .9;
-    }
+
    
     #options a{
         display: none;
@@ -197,11 +192,13 @@ button:hover {
     .overlay {
         position: absolute;
         top: 40vh;
-        left: 58vw;
+        left: 50vw;
         transition: ease all 0.5s;
         opacity: 0;
         font-size: 20px;
+      
     }
+   
     
     .overlay>p {
         color: #fff;
