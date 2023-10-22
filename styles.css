@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'gilroy';
+}
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 4vw;
+    background: white;
+    height: 10vh;
+}
+
+#logo>h1 {
+    font-weight: 600;
+    color: purple;
+    font-size: 30px;
+}
+#logo>img{
+    height: 9vh;
+}
+
+#options {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#options>a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 5px;
+    color: purple;
+
+}
+
+#options>a:hover {
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+    color: purple;
+}
+
+#main-container {
+    background: rgba(197, 229, 237, 0.635);
+    height: 90vh;
+    display: flex;
+}
+
+#left-container {
+    width: 50%;
+    margin-top: 25vh;
+    margin-left: 30vh;
+    line-height: 5vh;
+    scale: 1.2;
+}
+
+#left-container>h1>span {
+    font-weight: 900;
+    color: purple;
+    font-size: 35px;
+}
+
+#left-container>h1 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#left-container>p {
+    width: 60%;
+    font-size: 18px;
+    line-height: 2.5vh;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+button:hover {
+    background: purple;
+    color: white;
+}
+
+#profile_pic {
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: ease all 1s;
+    scale: 1;
+    opacity: 0;
+}
+
+#profile_pic:hover {
+    filter: grayscale(0);
+    scale: 1.1;
+}
+
+#cover {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#cover:hover .overlay {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.overlay p {
+    color: #CCE8F0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.icon{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        scale: 0.8;
+        margin: 0 -15vw ;
+    
+    }
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: #CCE8F0;
+    }
+#main{
+    background: #CCE8F0;
+}
+    #left-container {
+        width: 100%;
+        margin-top: 50vh;
+    }
+    #left-container>p{
+        margin: 3vh 0vh;
+        width: 70%;
+    }
+
+    #right-container {
+        width: 100%;
+        margin-top: 15vh;
+    }
+    #profile_pic {
+      scale: .8;
+      margin-top: -10vh;
+      transition: ease all 1s;
+        
+    }
+    #profile_pic:hover {
+        scale: .9;
+    }
+   
+    #options a{
+        display: none;
+    }
+    #options .icon{
+        display: block;
+        font-weight: 900;
+        font-size:25px;
+    }
+    .overlay {
+        position: absolute;
+        top: 40vh;
+        left: 58vw;
+        transition: ease all 0.5s;
+        opacity: 0;
+        font-size: 20px;
+    }
+    
+    .overlay>p {
+        color: #fff;
+    }
+    
+    #cover:hover .overlay {
+        opacity: 1;
+    }
+}
+
