@@ -192,7 +192,7 @@ button:hover {
     .overlay {
         position: absolute;
         top: 40vh;
-        left: 50vw;
+        left: 40vw;
         transition: ease all 0.5s;
         opacity: 0;
         font-size: 20px;
