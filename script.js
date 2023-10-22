@@ -14,12 +14,10 @@ tl.from("#options a", {
     opacity:1
 })
 
-document.querySelector(".icon").addEventListener("click", function () {
-    const links = document.querySelectorAll("#options a");
-    
-    links.forEach(function (link) {
-        link.style.display = link.style.display === "block" ? "none" : "block";
-    });
+// JavaScript function to toggle the "active" class for responsive behavior
+document.querySelector(".icon").addEventListener("click", function() {
+    const options = document.getElementById("options");
+    options.classList.toggle("active");
 });
 
 
