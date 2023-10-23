@@ -152,7 +152,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         scale: 0.8;
-        margin: 0 -15vw ;
+        margin: 0 -20vw ;
     
     }
     body{
@@ -170,6 +170,7 @@ button:hover {
     #left-container>p{
         margin: 3vh 0vh;
         width: 70%;
+        font-size: 3vw;
     }
 
     #right-container {
@@ -192,7 +193,7 @@ button:hover {
     .overlay {
         position: absolute;
         top: 40vh;
-        left: 45vw;
+        left: 50vw;
         transition: ease all 0.5s;
         opacity: 0;
         font-size: 20px;
@@ -235,7 +236,7 @@ button:hover {
 
     #options.active {
         position: fixed;
-        top: 10%;
+        top: 10.3%;
         right: 1vw;
         width: 100px;
         background-color: rgba(145, 205, 224, 0.786);
